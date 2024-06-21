@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@media screen and (max-width:600px) {
+    /*  Telas pequenas  */
+
+
+}
+
+@media screen and (min-width:600px) and (max-width:768px) {
+    /*  Celulares  */
+
+
+
+
+
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    /*  Tablet  */
+
+
+
+
+
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    /*  Desktop  */
+
+
+
+
+
+}
+
+@media screen and (min-width:1200px) {
+    /*  Telas Grandes  */
+
+
+
+
+
+}
