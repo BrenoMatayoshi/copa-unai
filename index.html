@@ -6,21 +6,29 @@
     <title>Copa Unaí</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/media-query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
-<body>
-    <menu id="itens"><ul>
-        <li><a href="#principal">Principal</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#evento">Eventos</a></li>
-        <li><a href="#contato">Contato</a></li>
-        <li><a href="#inscricao">Inscrição</a></li>
-    </ul></menu>
+<body onresize="mudouTamanho()">
+    <header>
+        <div id="content">
+            <div class="cabecalho">
+                <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+                <menu id="itens">
+                    <ul>
+                        <li><a href="#principal">Principal</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#evento">Eventos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#inscricao">Inscrição</a></li>
+                    </ul>
+                </menu>
+            </div>
+        </div>
+    </header>
     
     <section class="content" id="principal">
         <div>
-            <p>Bem Vindos ao Copa Unaí</p>
-            <h1>Copa Unai</h1>
-            <p>Os melhores campeonatos são aqui.</p>
+
         </div>
     </section>
 
@@ -40,5 +48,6 @@
 
     </section>
 
+    <script src="scripts.js"></script>
 </body>
 </html>

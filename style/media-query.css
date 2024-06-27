@@ -1,23 +1,20 @@
 @charset "UTF-8";
 
-@media screen and (max-width:600px) {
-    /*  Telas pequenas  */
-
-
-}
-
+/*
 @media screen and (min-width:600px) and (max-width:768px) {
-    /*  Celulares  */
+  Celulares  
 
 
 
 
 
-}
+}*/
 
 @media screen and (min-width:768px) and (max-width:992px) {
     /*  Tablet  */
-
+    span#burguer{
+        display: none;
+    }
 
 
 
