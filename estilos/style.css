@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --cor-de-secoes: #b3cbb9;
+    --cor-mais-escura: #3a4e48;
+    --cor-principal: #ffb500;
+    --cor-de-destaque: #c84630;
+    --cor-azul-leve: #6290C3;
+    --branco: white;
+    --preto-transparente: rgba(0, 0, 0, 0.55);
+    --fonte-de-titulo: Poppins;
+    --fonte-de-texto: Mukta;
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+    font-size: 35px;
+    color: var(--branco);
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    background-color: var(--preto-transparente);
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%);
+    top: 20px;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.logo-container{
+    padding: 15px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaço entre os itens */
+}
+
+.logo-img{
+    width: 35px; /* Tamanho do logo */
+    margin-right: 20px; /* Espaçamento da imagem da logo com o texto */
+}
+
+.logo{
+    text-decoration: none; /* Remove sublinhado do link */
+    color: var(--branco); /* Cor do texto */
+    display: flex; /* Permite alinhar elementos internos */
+    align-items: center; /* Centraliza verticalmente */
+    font-size: 26px;
+    font-family: var(--fonte-de-titulo);
+    font-weight: bold;
+}
+
+.menu-links{
+    display: none;
+    overflow-y: hidden;
+}
+
+.menu-links.abriu{
+    display: block;
+    animation: abrir .3s ease ;
+}
+
+.menu-links.abriu.fechar{
+    animation: fechar .3s ease forwards;
+}
+
+@keyframes abrir{
+    from{
+        height: 0px;
+    }
+    to{
+        height: 305px;
+    }
+}
+
+@keyframes fechar{
+    0%{
+        height: 305px;
+    }
+    100%{
+        height: 0px;
+        display: none;
+    }
+}
+
+ul>li{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul>li>a{
+    text-decoration: none;
+    color: var(--branco);
+    font-family: var(--fonte-de-texto);
+    font-size: 25px;
+}
+
+main>section{
+    height: 100vh;
+}
+
+section#principal{
+    padding-top: 140px;   
+
+}

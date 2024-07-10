@@ -1,62 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site One Page</title>
-    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Copa Unaí</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <div id="logo">Logo Aqui</div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#contato">Contato</a></li>
+            <div class="logo-container">
+                <a href="#principal" class="logo">
+                    <img src="images/Copa-Unai-Logo.png" alt="Logo Copa Unaí" class="logo-img">
+                    Copa Unaí
+                </a>
+                <span class="material-symbols-outlined" onclick="menuToggle()">menu</span>
+            </div>
+            <nav class="menu-links">
+                <ul class="lista">
+                    <li><a href="#principal" onclick="menuToggle()">Principal</a></li>
+                    <li><a href="#eventos-anteriores" onclick="menuToggle()">Eventos Anteriores</a></li>
+                    <li><a href="#sobre" onclick="menuToggle()">Sobre</a></li>
+                    <li><a href="#contato" onclick="menuToggle()">Contato</a></li>
+                    <li><a href="#inscricao" class="botao-inscricao" onclick="menuToggle()">Inscrição</a></li>
                 </ul>
             </nav>
-            <div class="hamburger-menu">&#9776;</div>
         </div>
     </header>
 
     <main>
-        <section id="home">
-            <div class="container">
-                <h1>Seção Home</h1>
-                <p>Conteúdo da primeira seção.</p>
-            </div>
+        <section id="principal">
+            <p>Conteúdo da seção principal</p>
         </section>
-
+        <section id="eventos-anteriores">
+            <p>Conteúdo da seção eventos anteriores</p>
+        </section>
         <section id="sobre">
-            <div class="container">
-                <h1>Sobre</h1>
-                <p>Conteúdo da segunda seção.</p>
-            </div>
+            <p>Conteúdo da seção sobre</p>
         </section>
-
-        <section id="servicos">
-            <div class="container">
-                <h1>Serviços</h1>
-                <p>Conteúdo da terceira seção.</p>
-            </div>
-        </section>
-
         <section id="contato">
-            <div class="container">
-                <h1>Contato</h1>
-                <p>Conteúdo da quarta seção.</p>
-            </div>
+            <p>Conteúdo da seção contato</p>
+        </section>
+        <section id="inscricao">
+            <p>Conteúdo da seção inscrição</p>
         </section>
     </main>
-
-    <footer>
-        <div class="container">
-            <p>Rodapé - © 2024 Meu Site</p>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
