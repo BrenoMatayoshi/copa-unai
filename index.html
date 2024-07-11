@@ -23,30 +23,30 @@
             </div>
             <nav class="menu-links">
                 <ul class="lista">
-                    <li><a href="#principal" onclick="Toggle('.menu-links', 'abriu')">Principal</a></li>
-                    <li><a href="#eventos-anteriores" onclick="Toggle('.menu-links', 'abriu')">Eventos Anteriores</a></li>
-                    <li><a href="#sobre" onclick="Toggle('.menu-links', 'abriu')">Sobre</a></li>
-                    <li><a href="#contato" onclick="Toggle('.menu-links', 'abriu')">Contato</a></li>
-                    <li style="margin: 20px 0px 15px 13px;"><a href="#inscricao" class="botao-inscricao" onclick="Toggle('.menu-links', 'abriu')">Inscrição</a></li>
+                    <li><a href="#principal" onclick="Toggle('.menu-links', 'abriu')" class="botao-menu">Principal</a></li>
+                    <li><a href="#eventos-anteriores" onclick="Toggle('.menu-links', 'abriu')" class="botao-menu">Eventos Anteriores</a></li>
+                    <li><a href="#sobre" onclick="Toggle('.menu-links', 'abriu')" class="botao-menu">Sobre</a></li>
+                    <li><a href="#contato" onclick="Toggle('.menu-links', 'abriu')" class="botao-menu">Contato</a></li>
+                    <li style="margin: 20px 0px 15px 13px;"><a href="#inscricao" class="botao-inscricao botao-menu" onclick="Toggle('.menu-links', 'abriu')">Inscrição</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section id="principal">
+        <section id="principal" class="hidden">
             <p>Conteúdo da seção principal</p>
         </section>
-        <section id="eventos-anteriores">
+        <section id="eventos-anteriores" class="hidden">
             <p>Conteúdo da seção eventos anteriores</p>
         </section>
-        <section id="sobre">
+        <section id="sobre" class="hidden">
             <p>Conteúdo da seção sobre</p>
         </section>
-        <section id="contato">
+        <section id="contato" class="hidden">
             <p>Conteúdo da seção contato</p>
         </section>
-        <section id="inscricao">
+        <section id="inscricao" class="hidden">
             <p>Conteúdo da seção inscrição</p>
         </section>
     </main>

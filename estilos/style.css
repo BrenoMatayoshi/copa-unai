@@ -74,7 +74,7 @@ header{
     display: block;
     overflow-y: hidden;
     height: 0px;
-    transition: all .3s ease;
+    transition: height .3s ease;
 }
 
 .menu-links.abriu{
@@ -114,7 +114,7 @@ section#principal{
 
 @keyframes imagemdefundo{
     0%{
-        background-size: 300%;
+        background-size: 350%;
     }
     100%{
         background-size: 150%;
