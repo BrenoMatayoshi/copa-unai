@@ -57,7 +57,7 @@ header{
 }
 
 .logo-img{
-    width: 35px; /* Tamanho do logo */
+    width: 30px; /* Tamanho do logo */
     margin-right: 20px; /* Espaçamento da imagem da logo com o texto */
 }
 
@@ -66,7 +66,7 @@ header{
     color: var(--branco); /* Cor do texto */
     display: flex; /* Permite alinhar elementos internos */
     align-items: center; /* Centraliza verticalmente */
-    font-size: 1.625rem;
+    font-size: 1.3rem;
     font-family: var(--fonte-de-titulo);
     font-weight: bold;
 }
@@ -79,7 +79,7 @@ header{
 }
 
 .menu-links.abriu{
-    height: 240px;
+    height: 195px;
 }
 
 ul>li{
@@ -90,7 +90,7 @@ ul>li>a{
     text-decoration: none;
     color: var(--branco);
     font-family: var(--fonte-de-texto);
-    font-size: 1.5625;
+    font-size: 1.2rem;
 }
 
 a.botao-inscricao{
@@ -100,12 +100,8 @@ a.botao-inscricao{
     border: solid 1px;
 }
 
-section{
-    height: 100vh;
-}
-
 section#principal {
-    min-height: 100vh; /* Ajuste a altura da seção conforme necessário */
+    height: 80vh; /* Ajuste a altura da seção conforme necessário */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -115,25 +111,44 @@ section#principal {
     background-position: center center;
 }
 
+.conteudo-principal{
+    background-color: var(--preto-transparente);
+    margin-top: 50%;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
 #cowntdown-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 200px;
     color: white;
-    background-color: var(--preto-transparente);
     width: auto;
     height: auto;
-    line-height: 2;
-    border-radius: 20px;
+    line-height: 1;
+    padding: 0px 20px 20px 20px;
+    font-family: var(--fonte-de-texto);
 }
 
 .text{
-    font-size: 2rem;
+    font-size: 1.3rem;
     margin: 1rem 2rem;
+}
+
+.titulo-parte-principal{
+    font-family: var(--fonte-de-titulo);
+    text-align: center; 
+    color: var(--branco);
+}
+
+.texto-parte-principal{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: var(--branco);
+    font-family: var(--fonte-de-texto);
 }
 
 .countdown-el{
     text-align: center;
-    padding: 10px;
 }
