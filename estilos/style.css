@@ -125,6 +125,7 @@ section#principal {
     width: auto;
     height: auto;
     line-height: 2;
+    border-radius: 20px;
 }
 
 .text{
