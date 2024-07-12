@@ -16,7 +16,7 @@
 
 .material-symbols-outlined {
     cursor: pointer;
-    font-size: 35px;
+    font-size: 2.1875rem;
     color: var(--branco);
     font-variation-settings:
     'FILL' 0,
@@ -66,7 +66,7 @@ header{
     color: var(--branco); /* Cor do texto */
     display: flex; /* Permite alinhar elementos internos */
     align-items: center; /* Centraliza verticalmente */
-    font-size: 26px;
+    font-size: 1.625rem;
     font-family: var(--fonte-de-titulo);
     font-weight: bold;
 }
@@ -90,7 +90,7 @@ ul>li>a{
     text-decoration: none;
     color: var(--branco);
     font-family: var(--fonte-de-texto);
-    font-size: 25px;
+    font-size: 1.5625;
 }
 
 a.botao-inscricao{
