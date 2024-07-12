@@ -24,7 +24,7 @@
             <nav class="menu-links">
                 <ul class="lista">
                     <li><a href="#principal" onclick="Toggle('.menu-links', 'abriu')" class="botao-menu">Principal</a></li>
-                    <li><a href="#eventos-anteriores" onclick="Toggle('.menu-links', 'abriu')" class="botao-menu">Eventos Anteriores</a></li>
+                    <li><a href="#historia" onclick="Toggle('.menu-links', 'abriu')" class="botao-menu">Nossa História</a></li>
                     <li><a href="#sobre" onclick="Toggle('.menu-links', 'abriu')" class="botao-menu">Sobre</a></li>
                     <li><a href="#contato" onclick="Toggle('.menu-links', 'abriu')" class="botao-menu">Contato</a></li>
                     <li style="margin: 20px 0px 15px 13px;"><a href="#inscricao" class="botao-inscricao botao-menu" onclick="Toggle('.menu-links', 'abriu')">Inscrição</a></li>
@@ -35,9 +35,31 @@
 
     <main>
         <section id="principal" class="hidden">
-            <p>Conteúdo da seção principal</p>
+            <div class="imagem-fundo"></div>
+            <div class="texto-sobreposto">
+                <div id="cowntdown-container">
+                    <div class="countdown-el days-c">
+                        <p class="text" id="days">0</p>
+                        <span>Dias</span>
+                    </div>
+                    <div class="countdown-el hours-c">
+                        <p class="text" id="hours">0</p>
+                        <span>Horas</span>
+                    </div>
+                    <div class="countdown-el mins-c">
+                        <p class="text" id="mins">0</p>
+                        <span>Minutos</span>
+                    </div>
+                    <div class="countdown-el seconds-c">
+                        <p class="text" id="seconds">0</p>
+                        <span>Segundos</span>
+                    </div>
+                </div>         
+                <!--<h2>Título do Conteúdo</h2>
+                <p>Descrição do conteúdo. <a href="#">Saiba mais</a>-->
+            </div>
         </section>
-        <section id="eventos-anteriores" class="hidden">
+        <section id="historia" class="hidden">
             <p>Conteúdo da seção eventos anteriores</p>
         </section>
         <section id="sobre" class="hidden">
@@ -51,6 +73,6 @@
         </section>
     </main>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
