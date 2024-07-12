@@ -117,13 +117,13 @@ section#principal {
     position: absolute; /* Posicionamento absoluto para a imagem */
     top: 0;
     left: 0;
-    width: 768px;
+    width: 100vw;
     height: 70vh;
     background-image: url('../images/slides/copa-unai-1.JPG'); /* Substitua por URL da sua imagem */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: blur(0px); /* Aplique o desfoque (ajuste o valor em px para o nível desejado) */
+    filter: blur(3px); /* Aplique o desfoque (ajuste o valor em px para o nível desejado) */
     animation: animacaoImagem 5s forwards;
   }
   
