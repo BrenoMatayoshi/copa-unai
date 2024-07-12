@@ -116,6 +116,7 @@ section#principal {
     margin-top: 50%;
     border-radius: 20px;
     font-size: 1rem;
+    width: 90%;
 }
 
 #cowntdown-container{
@@ -137,12 +138,14 @@ section#principal {
 
 .titulo-parte-principal{
     font-family: var(--fonte-de-titulo);
-    text-align: center; 
     color: var(--branco);
+    display: flex;
+    justify-content: center;
 }
 
 .texto-parte-principal{
-    text-align: center;
+    display: flex;
+    justify-content: center;
     font-size: 1.2rem;
     font-weight: 200;
     color: var(--branco);
