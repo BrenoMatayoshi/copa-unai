@@ -32,7 +32,7 @@ const hoursEl = document.querySelector('#hours')
 const minutesEl = document.querySelector('#mins')
 const secondsEl = document.querySelector('#seconds')
 
-const targetDate = "31 jul 2024" // Define aqui a data limite (Dias Mês Ano)
+const targetDate = "31 october 2024" // Define aqui a data limite (Dias Mês Ano)
 
 function countdown(){
     const newTargetDate = new Date(targetDate)

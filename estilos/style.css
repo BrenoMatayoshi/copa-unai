@@ -127,13 +127,13 @@ section#principal {
     width: auto;
     height: auto;
     line-height: 1;
-    padding: 0px 20px 20px 20px;
+    padding-bottom: 20px;
     font-family: var(--fonte-de-texto);
 }
 
 .text{
     font-size: 1.3rem;
-    margin: 1rem 2rem;
+    margin: 1rem 1.5rem;
 }
 
 .titulo-parte-principal{
