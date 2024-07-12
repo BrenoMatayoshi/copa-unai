@@ -105,69 +105,34 @@ section{
 }
 
 section#principal {
-    height: 70vh; /* Ajuste a altura da seção conforme necessário */
-  }
-
-  #minha-secao {
-    position: relative; /* Posicionamento relativo para o conteúdo sobreposto */
-    height: 500px; /* Ajuste a altura da seção conforme necessário */
-  }
-  
-  .imagem-fundo {
-    position: absolute; /* Posicionamento absoluto para a imagem */
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 70vh;
-    background-image: url('../images/slides/copa-unai-1.JPG'); /* Substitua por URL da sua imagem */
-    background-size: cover;
-    background-position: center;
+    min-height: 100vh; /* Ajuste a altura da seção conforme necessário */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../images/slides/copa-unai-1.JpG);
     background-repeat: no-repeat;
-    filter: blur(3px); /* Aplique o desfoque (ajuste o valor em px para o nível desejado) */
-    animation: animacaoImagem 5s forwards;
-  }
-  
-  .texto-sobreposto {
-    position: relative; /* Posicionamento relativo para estilização dentro da seção */
-    top: 50%;
-    left: 50%;
-    width: 55vh;
-    height: auto;
-    transform: translate(-50%, -50%); /* Compense a posição central */
-    background-color: var(--preto-transparente); /* Crie um fundo semitransparente */
-    padding: 20px;
-    color: white; /* Altere a cor do texto para contraste */
-    border-radius: 20px;
-  }
+    background-size: cover;
+    background-position: center center;
+}
 
 #cowntdown-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 200px;
+    color: white;
+    background-color: var(--preto-transparente);
+    width: auto;
+    height: auto;
+    line-height: 2;
 }
 
 .text{
     font-size: 2rem;
-    line-height: 1.5;
     margin: 1rem 2rem;
 }
 
 .countdown-el{
     text-align: center;
+    padding: 10px;
 }
-
-.countdown-el span{
-    font-size: 1rem;
-}
-
-@keyframes animacaoImagem {
-    0%{
-        background-size: 250%;
-    }
-    100%{
-        background-size: 150%;
-    }
-}
-
-
-
