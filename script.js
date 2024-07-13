@@ -32,8 +32,9 @@ const hoursEl = document.querySelector('#hours')
 const minutesEl = document.querySelector('#mins')
 const secondsEl = document.querySelector('#seconds')
 
-const targetDate = "31 october 2024" // Define aqui a data limite (Dias Mês Ano)
+const targetDate = "14 jul 2024" // Define aqui a data limite (Dias Mês Ano)
 
+// Contador de dias
 function countdown(){
     const newTargetDate = new Date(targetDate)
     const currentDate = new Date()
@@ -45,11 +46,22 @@ function countdown(){
     const mins = Math.floor(totalSeconds / 60) % 60
     const seconds = Math.floor(totalSeconds) % 60
 
-    daysEl.innerHTML = days
-    hoursEl.innerHTML = formatTime(hours)
-    minutesEl.innerHTML = formatTime(mins)
-    secondsEl.innerHTML = formatTime(seconds)
-
+    if (totalSeconds >= 0) {
+        daysEl.innerHTML = days
+        hoursEl.innerHTML = formatTime(hours)
+        minutesEl.innerHTML = formatTime(mins)
+        secondsEl.innerHTML = formatTime(seconds)
+    } else {
+        //esperar o wez responder pra terminar
+        document.querySelector('.conteudo-principal > h2').textContent = 'Está na hora!!!'
+        document.querySelectorAll('.countdown-el').forEach((count) => {
+            count.style.display = 'none'
+        })
+        //daysEl.style.display = 'none'
+        //hoursEl.style.display = 'none'
+        //minutesEl.style.display = 'none'
+        //secondsEl.style.display = 'none'
+    }
 }
 
 function formatTime(time){

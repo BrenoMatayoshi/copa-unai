@@ -9,9 +9,13 @@
     --cor-de-destaque: #c84630;
     --cor-azul-leve: #6290C3;
     --branco: white;
-    --preto-transparente: rgba(0, 0, 0, 0.55);
+    --preto-transparente: rgba(0, 0, 0, 0.6);
     --fonte-de-titulo: Poppins;
     --fonte-de-texto: Mukta;
+}
+
+body{
+    background-color: var(--cor-de-secoes);
 }
 
 .material-symbols-outlined {
@@ -101,14 +105,23 @@ a.botao-inscricao{
 }
 
 section#principal {
-    height: 80vh; /* Ajuste a altura da seção conforme necessário */
+    height: 60vh; /* Ajuste a altura da seção conforme necessário */
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: url(../images/slides/copa-unai-1.JpG);
+    background-image: url(../images/slides/arquibancada2.JPG);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center center;
+    animation: teste 5s forwards;
+}
+
+@keyframes teste{
+    0%{
+        background-size: 400%;
+    }
+    100%{
+        background-size: 180%;
+    }
 }
 
 .conteudo-principal{
@@ -155,3 +168,8 @@ section#principal {
 .countdown-el{
     text-align: center;
 }
+
+section#eventos-anteriores{
+    height: 100vh;
+}
+
