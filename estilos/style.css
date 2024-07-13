@@ -114,6 +114,7 @@ section#principal {
     background-repeat: no-repeat;
     background-position: center center;
     animation: teste 5s forwards;
+    transition: all 5s;
 }
 
 .conteudo-principal{
