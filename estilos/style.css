@@ -118,10 +118,10 @@ section#principal {
 
 @keyframes teste{
     0%{
-        transform: scale(1.5);
+        background-position: left center;
     }
     100%{
-        transform: scale(1);
+        background-position: center center;
     }
 }
 
