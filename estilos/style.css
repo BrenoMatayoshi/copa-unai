@@ -105,28 +105,20 @@ a.botao-inscricao{
 }
 
 section#principal {
-    height: 60vh; /* Ajuste a altura da seção conforme necessário */
+    height: 100vh; /* Ajuste a altura da seção conforme necessário */
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-size: cover;
     background-image: url(../images/slides/arquibancada2.JPG);
     background-repeat: no-repeat;
     background-position: center center;
     animation: teste 5s forwards;
 }
 
-@keyframes teste{
-    0%{
-        background-size: 400%;
-    }
-    100%{
-        background-size: 180%;
-    }
-}
-
 .conteudo-principal{
     background-color: var(--preto-transparente);
-    margin-top: 50%;
+    margin: auto;
     border-radius: 20px;
     font-size: 1rem;
     width: 90%;
