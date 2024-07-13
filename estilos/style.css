@@ -113,7 +113,16 @@ section#principal {
     background-image: url(../images/slides/arquibancada2.JPG);
     background-repeat: no-repeat;
     background-position: center center;
-    transition: all 5s;
+    animation: teste 5s forwards;
+}
+
+@keyframes teste{
+    0%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 .conteudo-principal{
