@@ -178,10 +178,10 @@ section#eventos-anteriores{
 
 }
 
-.imagem-eventos{
-    display: flex;
+.anim-eventos-anteriores img{
     width: 50vw;
-    height: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
+}
+
+.animacao-lateral-1{
+    
 }
