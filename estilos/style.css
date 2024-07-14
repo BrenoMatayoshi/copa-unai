@@ -171,6 +171,37 @@ section#principal {
 }
 
 section#eventos-anteriores{
-    height: 100vh;
+    /*height: 100vh;*/
+    display: flex;
+    flex-direction: column;
+    overflow: hidde;
+
 }
 
+section#eventos-anteriores img{
+    width: 50vw;
+
+}
+
+.animacao-lateral-1{
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    color: red;
+    
+}
+
+.animacao-lateral-2{
+    
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    color: black;
+}
+
+.anim-eventos-anteriores p{
+    display: flex;
+    width: 50vw;
+
+    align-items: center;
+}
