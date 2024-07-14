@@ -178,34 +178,14 @@ section#eventos-anteriores{
 
 }
 
-section#eventos-anteriores img{
+.imagem-eventos{
     width: 50vw;
-
+    height: 50vh;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
-.animacao-lateral-1{
-    position: relative;
-    display: flex;
-    box-sizing: border-box;
-    color: red;
+.animacao-lateral2{
     
-}
-
-.animacao-lateral-2{
-    
-    position: relative;
-    display: flex;
-    box-sizing: border-box;
-    color: black;
-}
-
-.anim-eventos-anteriores p{
-    display: flex;
-    width: 50vw;
-
-    align-items: center;
-}
-
-#sobre{
-    background-image: url(../images/eventos-anteriores/Futsal-dois.png);
+    margin-left: 50vw;
 }
