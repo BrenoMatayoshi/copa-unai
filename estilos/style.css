@@ -171,7 +171,7 @@ section#principal {
 }
 
 section#eventos-anteriores{
-    /*height: 100vh;*/
+    height: 100vh;
     display: flex;
     flex-direction: column;
     overflow: hidde;
@@ -179,13 +179,21 @@ section#eventos-anteriores{
 }
 
 .imagem-eventos{
+    display: flex;
     width: 50vw;
-    height: 50vh;
+    height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
+.animacao-lateral1{
+    display: flex;
+}
+
 .animacao-lateral2{
-    
+    margin-left: 50vw;
+}
+
+.imagem2-secaoeventos{
     margin-left: 50vw;
 }
