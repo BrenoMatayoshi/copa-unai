@@ -171,17 +171,28 @@ section#principal {
 }
 
 section#eventos-anteriores{
-    height: 100vh;
     display: flex;
     flex-direction: column;
     overflow: hidde;
-
 }
-
 .anim-eventos-anteriores img{
+    display: flex;
     width: 50vw;
 }
 
+.anim-eventos-anteriores p{
+    display: flex;
+    font-family: var(--fonte-de-texto);
+    margin: 20px;
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+}
+
 .animacao-lateral-1{
-    
+    display: flex;
+}
+
+.animacao-lateral-2{
+    display: flex;
 }
