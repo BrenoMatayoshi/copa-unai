@@ -9,6 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <title>Copa Unaí</title>
 </head>
 <body>
@@ -24,8 +27,8 @@
             <nav class="menu-links">
                 <ul class="lista">
                     <li><a href="#principal" onclick="Toggle('.menu-links', 'abriu')" class="botao-menu">Principal</a></li>
-                    <li><a href="#eventos-anteriores" onclick="Toggle('.menu-links', 'abriu')" class="botao-menu">Eventos Anteriores</a></li>
                     <li><a href="#sobre" onclick="Toggle('.menu-links', 'abriu')" class="botao-menu">Sobre</a></li>
+                    <li><a href="#eventos-anteriores" onclick="Toggle('.menu-links', 'abriu')" class="botao-menu">Eventos Anteriores</a></li>
                     <li><a href="#contato" onclick="Toggle('.menu-links', 'abriu')" class="botao-menu">Contato</a></li>
                     <li style="margin: 20px 0px 15px 13px;"><a href="#inscricao" class="botao-inscricao botao-menu" onclick="Toggle('.menu-links', 'abriu')">Inscrição</a></li>
                 </ul>
@@ -36,7 +39,6 @@
     <main>
         <section id="principal" class="hidden">
             <div class="conteudo-principal">
-
                 <h1 class="titulo-parte-principal" style="font-size: 2.5rem; margin-top: 15px;">Copa Unaí</h1>
                 <p class="texto-parte-principal" style="margin-bottom: 5px;">Os melhores campeonatos são aqui</p>
                 <h2 class="titulo-parte-principal ">Começa em:</h2>
@@ -61,23 +63,18 @@
             </div>        
         </section>
         <section id="eventos-anteriores" class="hidden">
-            <div class="anim-eventos-anteriores">
-                <div class="animacao-lateral-1">
-                    <img src="images/eventos-anteriores/Futsal-um.jpg" alt="">
-                    <p>A 1ª Edição da Copa Unaí de Futsal ocorreu nos dias 14 e 15 de janeiro de 2023, marcando o início de um emocionante torneio para os amantes do futsal e também o começo desse grande evento esportivo chamado Copa Unaí.</p>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/eventos-anteriores/futsal-um-pequeno.png" alt="Banner Copa Unaí de Futsal"></div>
+                    <div class="swiper-slide"><img src="images/eventos-anteriores/futsal-dois-pequeno.png" alt="Banner Copa Unaí de Futsal"></div>
+                    <div class="swiper-slide"><img src="images/eventos-anteriores/volei-um-pequeno.jpg" alt="Banner Copa Unaí de Vôlei"></div>
+                    <div class="swiper-slide"><img src="images/eventos-anteriores/volei-dois-pequeno.png" alt="Banner Copa Unaí de Vôlei"></div>
                 </div>
-                <div class="animacao-lateral-2">
-                    <p>Textinho aqui</p>
-                    <img src="images/eventos-anteriores/Futsal-dois.png" alt="">
-                </div>
-                <div class="animacao-lateral-1">
-                    <img src="images/eventos-anteriores/Volei-um.jpg" alt="">
-                    <p>Textinho aqui</p>
-                </div>
-                <div class="animacao-lateral-2">
-                    <p>Textinho aqui</p>
-                    <img src="images/eventos-anteriores/volei-dois.png" alt="">
-                </div>
+                <!-- Adicionando botões de navegação -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Adicionando a pagination -->
+                <div class="swiper-pagination"></div>
             </div>
         </section>
         <section id="sobre" class="hidden"  style="height: 100vh;">
@@ -90,7 +87,7 @@
             <p>Conteúdo da seção inscrição</p>
         </section>
     </main>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

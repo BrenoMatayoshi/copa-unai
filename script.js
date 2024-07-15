@@ -72,5 +72,20 @@ countdown();
 
 setInterval(countdown, 1000)
 
+// Slider
 
-// Imagens na página principal
+const swiper = new Swiper('.swiper', {
+    loop: true, // Habilita o loop
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+});

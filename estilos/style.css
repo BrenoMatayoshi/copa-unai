@@ -110,7 +110,7 @@ section#principal {
     align-items: center;
     flex-direction: column;
     background-size: cover;
-    background-image: url(../images/slides/arquibancada2.JPG);
+    background-image: url(../images/slides/arquibancada-reduzida.JPG);
     background-repeat: no-repeat;
     background-position: center center;
     animation: teste 5s forwards;
@@ -170,29 +170,6 @@ section#principal {
     text-align: center;
 }
 
-section#eventos-anteriores{
-    display: flex;
-    flex-direction: column;
-    overflow: hidde;
-}
-.anim-eventos-anteriores img{
-    display: flex;
-    width: 50vw;
-}
-
-.anim-eventos-anteriores p{
-    display: flex;
-    font-family: var(--fonte-de-texto);
-    margin: 20px;
-    width: 50vw;
-    align-items: center;
-    justify-content: center;
-}
-
-.animacao-lateral-1{
-    display: flex;
-}
-
-.animacao-lateral-2{
-    display: flex;
+.swiper-slide img{
+    width: 100vw;
 }
