@@ -110,18 +110,17 @@ section#principal {
     align-items: center;
     flex-direction: column;
     background-size: cover;
-    background-image: url(../images/slides/arquibancada-reduzida.JPG);
+    background-image: url(../images/slides/arquibancada-recortada.JPG);
     background-repeat: no-repeat;
-    background-position: center center;
-    animation: teste 5s forwards;
+    animation: anim-slide 5s forwards;
 }
 
-@keyframes teste{
+@keyframes anim-slide{
     0%{
         background-position: left center;
     }
     100%{
-        background-position: center center;
+        background-position: right center;
     }
 }
 
