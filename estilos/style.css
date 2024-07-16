@@ -221,6 +221,7 @@ section#sobre div{
 }
 
 section#sobre>div h2, h3{
+    color: white;
     margin: 10px;
     font-family: var(--fonte-de-titulo);
     font-size: 1.3rem;
