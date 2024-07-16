@@ -1,51 +1,79 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <title>Slider com Swiper</title>
+    <title>Quadra de Futsal</title>
     <style>
-        /* Adicione estilos personalizados, se necessário */
-        .swiper {
-            width: 100%;
-            height: 300px; /* Altura do slider */
-        }
+        body {
+    background-color: #222;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.quadra {
+    width: 80vw;
+    height: 100vh;
+    background-color: #444;
+    border: 10px solid #fff;
+    position: relative;
+}
+
+.linha {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.linha-vertical {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: #fff;
+}
+
+.meio-campo {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+.areas {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.areas.direita {
+    left: 70%;
+}
+
     </style>
 </head>
 <body>
-    <div class="swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="imagem1.jpg" alt="Imagem 1"></div>
-            <div class="swiper-slide"><img src="imagem2.jpg" alt="Imagem 2"></div>
-            <div class="swiper-slide"><img src="imagem3.jpg" alt="Imagem 3"></div>
-        </div>
-        <!-- Adicionando botões de navegação -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <!-- Adicionando a pagination -->
-        <div class="swiper-pagination"></div>
+    <div class="quadra">
+        <div class="linha"></div>
+        <div class="linha linha-vertical"></div>
+        <div class="meio-campo"></div>
+        <div class="areas"></div>
+        <div class="areas direita"></div>
     </div>
-
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            // Configurações do Swiper
-            loop: true, // Habilitar looping
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            autoplay: {
-                delay: 3000, // Tempo entre as transições
-                disableOnInteraction: false, // Não desabilitar após interação
-            },
-            effect: 'fade', // Efeito de transição
-        });
-    </script>
 </body>
 </html>
