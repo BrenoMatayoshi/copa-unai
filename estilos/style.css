@@ -214,13 +214,13 @@ section#sobre div{
     width: 90vw;
     border-radius: 30px;
     height: 90vw;
-    background: linear-gradient(var(--cor-mais-escura)0%, var(--cor-de-secoes)100%);
+    background: linear-gradient(var(--cor-mais-escura)0%, #4c685f 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-section#sobre>div h1, h2{
+section#sobre>div h2, h3{
     margin: 10px;
     font-family: var(--fonte-de-titulo);
     font-size: 1.3rem;
