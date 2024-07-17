@@ -14,9 +14,9 @@ const Observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         const index = Array.from(elements).indexOf(entry.target)
         if(entry.isIntersecting){
-
+            entry.target.classList.add('show')
         } else {
-
+            entry.target.classList.remove('show')
         }
     })
 })
