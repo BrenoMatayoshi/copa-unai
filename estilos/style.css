@@ -221,7 +221,6 @@ section#sobre{
 }
 
 section#sobre div{
-    transform: translateX(-110%);
     margin: 3vh 0px;
     width: 90vw;
     border-radius: 30px;
@@ -230,7 +229,24 @@ section#sobre div{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: transform 2s;
+}
+
+section#sobre>div.hidden{
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+section#sobre>p.hidden{
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+section#sobre>div.hidden.show{
+    translate: 100%;
+}
+
+section#sobre>p.hidden.show{
+    translate: 100%;
 }
 
 section#sobre>div h2, h3{
@@ -241,8 +257,6 @@ section#sobre>div h2, h3{
 }
 
 section#sobre p{
-    transform: translateX(-110%);
-    transition: transform 2s;
     font-family: var(--fonte-de-texto);
     color: white;
     font-size: 1.2rem;
@@ -280,13 +294,4 @@ footer p{
     opacity: 1;
     filter: blur(0px);
 
-}
-
-section#sobre.show div{
-    transform: translateX(0%);
-}
-
-section#sobre.show p{
-    transition-delay: 500ms;
-    transform: translateX(0%);
 }
