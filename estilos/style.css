@@ -45,6 +45,11 @@ html{
     scroll-behavior: smooth;
 }
 
+section{
+    z-index: 1;
+    position: relative;
+}
+
 header{
     position: fixed;
     background-color: var(--preto-transparente);
