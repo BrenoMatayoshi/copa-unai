@@ -223,7 +223,6 @@ div.conteudo-principal>p{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    transition: height 2s;
 }
 
 #eventos-anteriores h1{
@@ -243,7 +242,6 @@ div.conteudo-principal>p{
 }
 
 section#sobre{
-
     background-color: var(--cor-mais-escura);
     display: flex;
     flex-direction: column;
