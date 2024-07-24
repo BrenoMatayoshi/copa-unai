@@ -76,8 +76,6 @@ setInterval(countdown, 1000)
 
 const swiper = new Swiper('.swiper', {
     loop: true, // Habilita o loop
-    slidesPerView: 'auto',
-    spaceBetween: 10,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
