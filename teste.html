@@ -1,74 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            padding: 0px;
-            margin: 0px;
-            box-sizing: border-box;
-            overflow: hidden;
-        }
-        section{
-            background-color: black;
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            gap: 10px;
-        }
-        .redondo{
-            width: 40vw;
-            height: 40vw;
-            border-radius: 50%;
-            border: 2px solid white;
-        }
-        .linha{
-            width: 100%;
-            height: 2px;
-            background-color: white;
-        }
-        .meio{
-            position: relative;
-            background-color: red;
-            margin: auto;
-        }
-        .cima{
-            position: relative;
-            transform: translateY(-50%);
-        }
-        .baixo{
-            position: relative;
-            transform: translateY(50%);
-        }
-        .linha-cima{
-            margin-top: 40%;
-        }
-        .linha-baixo{
-            margin-bottom: 40%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      height: auto; /* Ajuste a altura da página automaticamente */
+    }
+
+    .container {
+      display: flex;
+      height: 30vh; /* O container ocupa 50% da altura da tela */
+      overflow: hidden;
+    }
+
+    .imagem-esquerda, .imagem-direita {
+      flex: 0.5;
+    }
+
+    .imagem-esquerda img, .imagem-direita img {
+      height: 100%;
+      width: auto;
+    }
+  </style>
 </head>
 <body>
-    <section>
-        <div class="redondo cima">
+  <div class="container">
+    <div class="imagem-esquerda">
+      <img src="images/bola-de-futebol.png" alt="Descrição da imagem esquerda">
+    </div>
+    <div class="imagem-direita">
+      <img src="images/bola-de-volei.png" alt="Descrição da imagem direita">
+    </div>
+  </div>
 
-        </div>
-        <span class="linha linha-cima">
+  <script>
+    const container = document.querySelector('.container');
+    const imagemEsquerda = document.querySelector('.imagem-esquerda');
+    const imagemDireita = document.querySelector('.imagem-direita');
 
-        </span>
-        <div class="redondo meio">
-            <span class="linha">
-                
-            </span>
-        </div>
-        <span class="linha linha-baixo"></span>
-        <div class="redondo baixo">
-
-        </div>
-    </section>
+    window.addEventListener('scroll', function() {
+      const scrollTop = window.pageYOffset;
+      imagemEsquerda.style.top = `${scrollTop * 0.3}px`; /* Velocidade da imagem esquerda (0.3 para animação mais lenta) */
+      imagemDireita.style.bottom = `${scrollTop * 0.3}px`; /* Velocidade da imagem direita (0.3 para animação mais lenta) */
+    });
+  </script>
 </body>
 </html>

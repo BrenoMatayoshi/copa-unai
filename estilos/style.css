@@ -53,7 +53,12 @@ header{
     top: 20px;
     border-radius: 20px;
     padding: 15px;
-    z-index: 2;
+    z-index: 3;
+}
+
+section{
+    z-index: 1;
+    position: relative;
 }
 
 .logo-container{
@@ -134,6 +139,16 @@ section#principal {
     width: 90%;
 }
 
+div.conteudo-principal>p{
+    display: flex;
+    justify-content: center;
+    font-family: var(--fonte-de-texto);
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    
+}
+
 #cowntdown-container{
     display: flex;
     flex-wrap: wrap;
@@ -182,15 +197,14 @@ section#principal {
     width: 90vw;
 }
 
-
-
 .swiper-button-next, .swiper-button-prev{
     opacity: 0;
 }
 
 #eventos-anteriores{
+    background-color: var(--cor-de-secoes);
     /*background: linear-gradient(#a77700 0%, #c78f00 70%, var(--cor-principal)100%);*/
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -214,6 +228,7 @@ section#principal {
 }
 
 section#sobre{
+
     background-color: var(--cor-mais-escura);
     display: flex;
     flex-direction: column;
@@ -224,7 +239,7 @@ section#sobre div{
     margin: 3vh 0px;
     width: 90vw;
     border-radius: 30px;
-    height: 90vw;
+    height: 50vh;
     background: linear-gradient(var(--cor-mais-escura)0%, #4c685f 100%);
     display: flex;
     flex-direction: column;
@@ -233,12 +248,12 @@ section#sobre div{
 
 section#sobre>div.hidden{
     transform: translateX(-100%);
-    transition: all 2s;
+    transition: all 2s ease;
 }
 
 section#sobre>p.hidden{
     transform: translateX(-100%);
-    transition: all 2s;
+    transition: all 2s ease;
 }
 
 section#sobre>div.hidden.show{
@@ -261,7 +276,7 @@ section#sobre p{
     color: white;
     font-size: 1.2rem;
     width: 90vw;
-    margin: 0px 0px 3vh 0px;
+    margin: auto 0px 2em 0px;
 }
 
 footer{
