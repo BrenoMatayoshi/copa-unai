@@ -92,7 +92,7 @@ header{
 }
 
 .menu-links.abriu{
-    height: 195px;
+    height: 230px;
 }
 
 ul>li{
@@ -113,7 +113,7 @@ a.botao-inscricao{
 }
 
 section#principal {
-    height: 101dvh; /* Ajuste a altura da seção conforme necessário */
+    height: 101vh; /* Ajuste a altura da seção conforme necessário */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -266,12 +266,12 @@ section#sobre div{
 
 section#sobre>div.hidden{
     transform: translateX(-100%);
-    transition: all 2s ease;
+    transition: all 1.5s ease;
 }
 
 section#sobre>p.hidden{
     transform: translateX(-100%);
-    transition: all 2s ease;
+    transition: all 1.5s ease;
 }
 
 section#sobre>div.hidden.show{
@@ -297,22 +297,31 @@ section#sobre p{
     margin: auto 0px 2em 0px;
 }
 
+section#contato{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section#contato div{
+    display: flex;
+    gap: 1.5em;
+}
+
+section#contato img{
+    width: 50px;
+}
+
 footer{
     color: white;
     bottom: 0px;
     background-color: var(--cor-mais-escura);
 }
 
-footer div{
-    padding: 1em 0px 0px 1em;
-}
-
-footer img{
-    padding: .5em;
-}
-
 footer p{
-    padding: .1em 1em 1em;
+    padding: 1em;
     font-family: var(--fonte-de-texto);
     font-size: 1.2rem;
 }
@@ -320,7 +329,7 @@ footer p{
 .hidden{
     opacity: 1;
     filter: blur(10px);
-    transition: ALL 2s;
+    transition: ALL 1.5s;
 }
 
 .show{

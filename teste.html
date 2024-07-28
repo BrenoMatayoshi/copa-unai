@@ -3,112 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="styles.css"> <!-- Se tiver um arquivo CSS separado -->
-    <title>Slider com Swiper</title>
+    <title>Efeito Parallax Lado a Lado</title>
     <style>
-      *{
-        width: 100vw;
-        overflow-x: hidden;
+        /* styles.css */
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
 
-      }
-      .swiper-container {
-    width: 100%;
-    height: 400px; /* Altura desejada do slider */
-    margin: 0 auto;
-}
+        .parallax-container {
+            position: relative;
+            height: 100vh;
+            background: #eee;
+        }
 
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    /* Outros estilos para os slides */
-}
+        .parallax-content {
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+            position: relative;
+        }
 
-.swiper-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Para ajustar o tamanho da imagem */
-}
+        .element {
+            width: 45%;
+            text-align: center;
+            font-size: 2em;
+            color: #333;
+            position: absolute;
+        }
 
-.swiper-button-next, .swiper-button-prev {
-    color: #fff;
-    font-size: 18px;
-    background: #000;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin-top: -20px;
-    z-index: 10;
-}
+        .element-up {
+            top: 30%;
+            left: 0;
+        }
 
-.swiper-button-next {
-    right: 10px;
-}
+        .element-down {
+            top: 30%;
+            left: 55%;
+        }
 
-.swiper-button-prev {
-    left: 10px;
-}
-
-.swiper-pagination {
-    position: absolute;
-    bottom: 10px;
-    text-align: center;
-    width: 100%;
-    z-index: 10;
-}
-
-.swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    display: inline-block;
-    background: #ccc;
-    opacity: 0.5;
-    border-radius: 10px;
-    margin: 0 5px;
-    cursor: pointer;
-}
-
-.swiper-pagination-bullet-active {
-    background: #000;
-    opacity: 1;
-}
-
+        .other-content {
+            height: 200vh;
+            background: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-
-<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="slide1.jpg" alt="Slide 1"></div>
-        <div class="swiper-slide"><img src="slide2.jpg" alt="Slide 2"></div>
-        <div class="swiper-slide"><img src="slide3.jpg" alt="Slide 3"></div>
+    <div class="parallax-container">
+        <div class="parallax-content">
+            <div class="element element-up">Eu subo!</div>
+            <div class="element element-down">Eu desço!</div>
+        </div>
     </div>
-    <!-- Adicionando botões de navegação -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <!-- Adicionando a pagination -->
-    <div class="swiper-pagination"></div>
-</div>
+    <div class="other-content">
+        <p>Outros conteúdos da página...</p>
+    </div>
+    <script>
+        // script.js
+        document.addEventListener('scroll', function() {
+            const scrollY = window.scrollY;
+            const elementUp = document.querySelector('.element-up');
+            const elementDown = document.querySelector('.element-down');
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-  const swiper = new Swiper('.swiper-container', {
-    loop: true, // Habilita o loop do slider
-    autoplay: {
-        delay: 5000, // Tempo em milissegundos entre os slides
-        disableOnInteraction: false, // Permite pausar o autoplay quando o usuário interage
-    },
-    navigation: {
-        nextEl: '.swiper-button-next', // Botão próximo
-        prevEl: '.swiper-button-prev', // Botão anterior
-    },
-    pagination: {
-        el: '.swiper-pagination', // Paginação
-        clickable: true, // Permite clicar na paginação para navegar aos slides
-    },
-});
-
-</script> <!-- Se tiver um arquivo JS separado -->
+            // Ajusta a posição dos elementos com base no scroll
+            elementUp.style.transform = `translateY(-${scrollY * 0.5}px)`;
+            elementDown.style.transform = `translateY(${scrollY * 0.5}px)`;
+        });
+    </script>
 </body>
 </html>
