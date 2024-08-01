@@ -118,7 +118,7 @@ section#principal {
     align-items: center;
     flex-direction: column;
     background-size: cover;
-    background-image: url(../images/slides/arquibancada-reduzida.JPG);
+    background-image: url(../images/slides/arquibancada-recortada.JPG);
     background-repeat: no-repeat;
     animation: anim-slide 5s forwards;
 }
@@ -128,7 +128,7 @@ section#principal {
         background-position: left center;
     }
     100%{
-        background-position: center center;
+        background-position: center right;
     }
 }
 
